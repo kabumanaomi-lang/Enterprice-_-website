@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Qadir Enterprises - clothes, outfits, accessories and cosmetics.">
+  <title>Qadir Enterprises | Shop & Order</title>
+  <style>
+    :root{--ink:#172033;--muted:#687386;--cream:#fffaf3;--gold:#c69242;--rose:#f3e4dc;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+    header{background:linear-gradient(125deg,#172033,#35415a);color:white;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .brand{font-family:Georgia,serif;font-size:clamp(22px,4vw,32px);font-weight:bold;letter-spacing:.4px}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{color:white;text-decoration:none;font-size:14px}
+    nav a:hover{color:#f3c879}
+    .hero{padding:70px 7%;background:linear-gradient(110deg,rgba(23,32,51,.92),rgba(23,32,51,.65)),linear-gradient(135deg,#c69242,#f3e4dc);color:white}
+    .hero-inner{max-width:850px}
+    .eyebrow{color:#f3c879;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:bold}
+    h1{font: bold clamp(38px,7vw,66px)/1.08 Georgia,serif;margin:14px 0}
+    .hero p{font-size:18px;max-width:600px;color:#f5f1eb}
+    .btn{display:inline-block;background:var(--gold);color:#171c28;padding:13px 22px;border-radius:5px;text-decoration:none;font-weight:bold;margin-top:12px;border:0;cursor:pointer}
+    main{max-width:1100px;margin:auto;padding:45px 6%}
+    .section-title{text-align:center;margin-bottom:28px}
+    .section-title h2{font: bold 34px Georgia,serif;margin:0 0 8px}
+    .section-title p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+    .card{background:white;border:1px solid #eee4d9;border-radius:12px;padding:25px 20px;box-shadow:0 8px 24px rgba(30,35,45,.05)}
+    .card .symbol{font-size:34px}
+    .card h3{font: bold 22px Georgia,serif;margin:10px 0 5px}
+    .card p{color:var(--muted);margin:0}
+    .order{background:var(--rose);border-radius:14px;padding:30px;margin-top:45px}
+    form{display:grid;gap:12px;max-width:650px;margin:20px auto 0}
+    input,select,textarea{width:100%;padding:13px;border:1px solid #d8cfc5;border-radius:6px;font:inherit;background:white}
+    textarea{min-height:100px;resize:vertical}
+    .order button{font:inherit}
+    .contact{text-align:center;padding:35px 15px}
+    .contact a{color:#80551d;font-weight:bold}
+    footer{background:#172033;color:#e9e5df;text-align:center;padding:20px;font-size:13px}
+    @media(max-width:560px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero{padding:55px 7%}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Qadir Enterprises</div>
+    <nav>
+      <a href="#home">Home</a><a href="#services">What We Offer</a><a href="#order">Book / Order</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="eyebrow">Welcome to</div>
+      <h1>Qadir Enterprises</h1>
+      <p>Your place for clothes and outfits, beautiful accessories and cosmetics. Browse our services and contact us to make an order or booking.</p>
+      <a class="btn" href="#order">Book or Order Now</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="services">
+      <div class="section-title">
+        <h2>What We Offer</h2>
+        <p>Explore our products and services.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="symbol">👗</div><h3>Clothes & Outfits</h3><p>Fashion and outfits for different styles and occasions.</p></article>
+        <article class="card"><div class="symbol">👜</div><h3>Accessories</h3><p>Accessories to complement your look.</p></article>
+        <article class="card"><div class="symbol">💄</div><h3>Cosmetics</h3><p>Beauty and personal-care products.</p></article>
+        <article class="card"><div class="symbol">📦</div><h3>Booking & Orders</h3><p>Send us your request and we will get back to you.</p></article>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="section-title">
+        <h2>Book or Place an Order</h2>
+        <p>Fill in the details. Your request will open in WhatsApp for you to send.</p>
+      </div>
+      <form id="orderForm">
+        <input id="customerName" type="text" placeholder="Your name" required>
+        <input id="customerPhone" type="tel" placeholder="Your phone number" required>
+        <select id="category" required>
+          <option value="">Choose a product or service</option>
+          <option>Clothes & Outfits</option><option>Accessories</option><option>Cosmetics</option><option>Booking / Other</option>
+        </select>
+        <textarea id="details" placeholder="Describe what you would like to order or book" required></textarea>
+        <button class="btn" type="submit">Send Order on WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title"><h2>Contact Us</h2><p>We look forward to hearing from you.</p></div>
+      <p>WhatsApp: <a href="https://wa.me/254142558436">0142558436</a></p>
+      <p>Email: <a href="mailto:jayrajqadir@gmail.com">jayrajqadir@gmail.com</a></p>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Qadir Enterprises. All rights reserved.</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('customerName').value.trim();
+      const phone = document.getElementById('customerPhone').value.trim();
+      const category = document.getElementById('category').value;
+      const details = document.getElementById('details').value.trim();
+      const message = `Hello Qadir Enterprises. I would like to make an order/booking.%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ARequest: ${encodeURIComponent(category)}%0ADetails: ${encodeURIComponent(details)}`;
+      window.open('https://wa.me/254142558436?text=' + message, '_blank');
+    });
+  </script>
+</body>
+</html>
